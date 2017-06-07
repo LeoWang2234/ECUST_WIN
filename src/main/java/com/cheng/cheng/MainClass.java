@@ -202,6 +202,12 @@ public class MainClass extends JFrame{
                     }).start();
 
                 }else {
+                    status = OnlineTest.sendGet("http://www.baidu.com");
+                    // 若是判断掉线啦，则再重新请求一次，防止误判，但是有可能会增加响应时间
+                    // 如果在线，再继续循环
+                    if (status) {
+                        continue;
+                    }
                     new Thread(new Runnable() {
                         public void run() {
                             if (!ignorePop) {
