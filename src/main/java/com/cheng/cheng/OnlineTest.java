@@ -16,11 +16,11 @@ public class OnlineTest {
 
     public static volatile boolean connected = true;
     public static void main(String[] args) throws Exception {
-        String result = sendGet("http://www.baidu.com");
-        System.out.println(result);
+        Boolean result = sendGet("http://www.baidu.com");
+//        System.out.println(result);
 
     }
-    public static String sendGet(String url) {
+    public static Boolean sendGet(String url) {
         String result = "";
         BufferedReader in = null;
         try {
@@ -42,37 +42,49 @@ public class OnlineTest {
             // 获取所有响应头字段
             Map<String, List<String>> map = conn.getHeaderFields();
             // 遍历所有的响应头字段
-            for (String key : map.keySet()) {
-                System.out.println(key + "--->" + map.get(key));
-                if (key!=null && key.equals("Connection")){
-                    if (map.get(key).get(0).equals("close")) {
-                        System.out.println(map.get(key).get(0));
+//            for (String key : map.keySet()) {
+//                System.out.println(key + "--->" + map.get(key));
+//                if (key!=null && key.equals("Connection")){
+//                    if (map.get(key).get(0).equals("close")) {
+//                        System.out.println(map.get(key).get(0));
 //                        System.out.println("掉线啦");
-                        connected = false;
-                        break;
-                    }else {
-                        connected = true;
-                        System.out.println(map.get(key).get(0));
+//                        connected = false;
+//                        break;
+//                    }else {
+//                        connected = true;
+//                        System.out.println(map.get(key).get(0));
 //                        System.out.println(map.get(key));
 //                        System.out.println("在线。。");
-                        break;
-                    }
-                }
-//
-            }
-//             定义BufferedReader输入流来读取URL的响应
-//            in = new BufferedReader(
-//                    new InputStreamReader(conn.getInputStream()));
-//            String line;
-//            while ((line = in.readLine()) != null) {
-//                result += "/n" + line;
+//                        break;
+//                    }
+//                }
+
 //            }
-//            System.out.println(result);
+//             定义BufferedReader输入流来读取URL的响应
+            in = new BufferedReader(
+                    new InputStreamReader(conn.getInputStream()));
+            String line;
+            while ((line = in.readLine()) != null) {
+                result += "/n" + line;
+            }
+            System.out.println(result.length());
+
+            if (result.length() < 5000) {
+                return false;
+            }else {
+                return true;
+            }
+
         } catch (Exception e) {
 //            System.out.println("发送GET请求出现异常！" + e);
+        }finally {
+            try {
+                in.close();
+            } catch (IOException e) {
+            }
         }
         // 使用finally块来关闭输入流
-        return result;
+        return false;
     }
 
 

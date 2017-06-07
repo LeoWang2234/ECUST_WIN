@@ -11,6 +11,9 @@ public class MainClass extends JFrame{
     JLabel jLabel1,jLabel2,statusLabel;
     JPanel jp1,jp2,jp3,status;
     JButton jb1,jb2;//创建按钮
+
+    int xLocation;
+    int yLocation;
     public MainClass() {
         this.setResizable(false);
         jTextField = new JTextField(10);
@@ -39,7 +42,9 @@ public class MainClass extends JFrame{
         Dimension screenSize = kit.getScreenSize(); //获取屏幕的尺寸
         int screenWidth = screenSize.width; //获取屏幕的宽
         int screenHeight = screenSize.height; //获取屏幕的高
-        this.setLocation(screenWidth / 2 - windowWidth / 2 - 100, screenHeight / 2 - windowHeight / 2 - 100);//设置窗口居中显示
+        xLocation = screenWidth / 2 - windowWidth / 2 - 100;
+        yLocation = screenHeight / 2 - windowHeight / 2 - 100;
+        this.setLocation(xLocation, yLocation);//设置窗口居中显示
 
 
         jp1.add(jLabel1);
@@ -72,6 +77,7 @@ public class MainClass extends JFrame{
         // 有线登录
         jb1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                MainClass.this.setAlwaysOnTop(false);
 
                 jb2.setText("无线登录");
                 jb2.setForeground(Color.black);
@@ -118,6 +124,7 @@ public class MainClass extends JFrame{
 //         无线登录
         jb2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                MainClass.this.setAlwaysOnTop(false);
 
                 jb1.setText("有线登录");
                 jb1.setForeground(Color.black);
@@ -176,12 +183,16 @@ public class MainClass extends JFrame{
 
         public void run() {
             while (loop) {
-                OnlineTest.sendGet("http://www.163.com");
-                if (OnlineTest.connected) {
+                Boolean status = OnlineTest.sendGet("http://www.baidu.com");
+                if (status) {
                     new Thread(new Runnable() {
                         public void run() {
                             statusLabel.setText("当前在线");
                             statusLabel.setForeground(Color.BLUE);
+                            jb2.setText("无线登录");
+                            jb2.setForeground(Color.black);
+                            jb1.setText("有线登录");
+                            jb1.setForeground(Color.black);
                         }
                     }).start();
 
@@ -189,14 +200,20 @@ public class MainClass extends JFrame{
                     new Thread(new Runnable() {
                         public void run() {
                             statusLabel.setText("掉线啦！");
+                            MainClass.this.setLocation(xLocation, yLocation);//设置窗口居中显示
+                            MainClass.this.setAlwaysOnTop(true);
                             statusLabel.setForeground(Color.RED);
+                            jb2.setText("无线登录");
+                            jb2.setForeground(Color.black);
+                            jb1.setText("有线登录");
+                            jb1.setForeground(Color.black);
                         }
                     }).start();
 
                 }
                 if (loop) {
                     try {
-                        Thread.sleep(10000);
+                        Thread.sleep(5000);
                     } catch (InterruptedException e) {
                     }
                 }

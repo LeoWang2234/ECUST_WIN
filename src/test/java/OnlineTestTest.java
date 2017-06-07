@@ -19,7 +19,7 @@ public class OnlineTestTest
                 e.printStackTrace();
             }
 
-            onlineTest.sendGet("http://www.163.com");
+            onlineTest.sendGet("http://www.baidu.com");
 
             System.out.println(OnlineTest.connected);
 
