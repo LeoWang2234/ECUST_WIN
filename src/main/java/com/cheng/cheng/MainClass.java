@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;   //导入必要的包
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class MainClass extends JFrame{
     JTextField jTextField ;//定义文本框组件
@@ -11,6 +13,8 @@ public class MainClass extends JFrame{
     JLabel jLabel1,jLabel2,statusLabel;
     JPanel jp1,jp2,jp3,status;
     JButton jb1,jb2;//创建按钮
+
+    volatile boolean ignorePop = false; //  掉线后忽略弹窗
 
     int xLocation;
     int yLocation;
@@ -73,11 +77,22 @@ public class MainClass extends JFrame{
         this.setTitle("登陆");
         this.pack();
 
+        statusLabel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                statusLabel.setText("掉线啦!");
+                setState(Frame.ICONIFIED);
+                ignorePop = true;
+                MainClass.this.setAlwaysOnTop(false);
+                statusLabel.setForeground(Color.RED);
+            }
+        });
 
         // 有线登录
         jb1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 MainClass.this.setAlwaysOnTop(false);
+                ignorePop = false;
 
                 jb2.setText("无线登录");
                 jb2.setForeground(Color.black);
@@ -125,6 +140,7 @@ public class MainClass extends JFrame{
         jb2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 MainClass.this.setAlwaysOnTop(false);
+                ignorePop = false;
 
                 jb1.setText("有线登录");
                 jb1.setForeground(Color.black);
@@ -140,33 +156,20 @@ public class MainClass extends JFrame{
 
 //                System.out.println(status);
 
-                if (status == LoginStatus.ALREADY_LOGINED.getIndex()) {
-                    new Online(false).start();
-                    new Thread(new Runnable() {
-                        public void run() {
-                            statusLabel.setText("用户已在线");
-                            statusLabel.setForeground(Color.BLUE);
-                            jb2.setText("无线登录");
-                            jb2.setForeground(Color.black);
-
-                        }
-                    }).start();
-                } else if (status == LoginStatus.FAILED.getIndex()) {
-                    new Thread(new Runnable() {
-                        public void run() {
-                            statusLabel.setText("登录失败");
-                            statusLabel.setForeground(Color.red);
-                            jb2.setText("点击重试");
-                            jb2.setForeground(Color.red);
-                        }
-                    }).start();
-                }else {
+                if (status == LoginStatus.SUCCESS.getIndex()) {
                     new Thread(new Runnable() {
                         public void run() {
                             statusLabel.setText("登录成功");
                             statusLabel.setForeground(Color.BLUE);
                             jb2.setText("无线登录");
                             jb2.setForeground(Color.black);
+                        }
+                    }).start();
+                }else {
+                    new Thread(new Runnable() {
+                        public void run() {
+                            statusLabel.setText("参数异常");
+                            statusLabel.setForeground(Color.BLUE);
                         }
                     }).start();
                 }
@@ -185,6 +188,8 @@ public class MainClass extends JFrame{
             while (loop) {
                 Boolean status = OnlineTest.sendGet("http://www.baidu.com");
                 if (status) {
+                    ignorePop = false;
+                    MainClass.this.setAlwaysOnTop(false);
                     new Thread(new Runnable() {
                         public void run() {
                             statusLabel.setText("当前在线");
@@ -199,10 +204,17 @@ public class MainClass extends JFrame{
                 }else {
                     new Thread(new Runnable() {
                         public void run() {
-                            statusLabel.setText("掉线啦！");
-                            MainClass.this.setLocation(xLocation, yLocation);//设置窗口居中显示
-                            MainClass.this.setAlwaysOnTop(true);
-                            statusLabel.setForeground(Color.RED);
+                            if (!ignorePop) {
+                                System.out.println(ignorePop);
+                                statusLabel.setText("掉线啦 点我忽略");
+                                statusLabel.setForeground(Color.RED);
+                                setState(JFrame.NORMAL);
+                                MainClass.this.setLocation(xLocation, yLocation);//设置窗口居中显示
+                                MainClass.this.setAlwaysOnTop(true);
+                            }else {
+                                statusLabel.setText("掉线啦");
+                                statusLabel.setForeground(Color.RED);
+                            }
                             jb2.setText("无线登录");
                             jb2.setForeground(Color.black);
                             jb1.setText("有线登录");

@@ -7,17 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6039730b-a0e0-4043-8cc0-c54cf13197c9" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cheng/cheng/MainClass$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cheng/cheng/MainClass$1$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cheng/cheng/MainClass$2$3.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ECUST_WIN_jar/ECUST_WIN.jar" afterPath="$PROJECT_DIR$/out/artifacts/ECUST_WIN_jar/ECUST_WIN.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/cheng/JsoupHelper.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/cheng/JsoupHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/cheng/MainClass$1.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/cheng/MainClass$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/cheng/MainClass$2$1.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/cheng/MainClass$2$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/cheng/MainClass$2$2.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/cheng/MainClass$2$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/cheng/MainClass$2.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/cheng/MainClass$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/cheng/MainClass$Online$1.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/cheng/MainClass$Online$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/cheng/MainClass$Online$2.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/cheng/MainClass$Online$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/cheng/MainClass$Online.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/cheng/MainClass$Online.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/cheng/MainClass.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/cheng/MainClass.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/cheng/OnlineTest.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/cheng/OnlineTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/OnlineTestTest.class" afterPath="$PROJECT_DIR$/target/test-classes/OnlineTestTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cheng/cheng/JsoupHelper.java" afterPath="$PROJECT_DIR$/src/main/java/com/cheng/cheng/JsoupHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cheng/cheng/MainClass.java" afterPath="$PROJECT_DIR$/src/main/java/com/cheng/cheng/MainClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cheng/cheng/OnlineTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/cheng/cheng/OnlineTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/OnlineTestTest.java" afterPath="$PROJECT_DIR$/src/test/java/OnlineTestTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,22 +36,46 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainClass.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/cheng/MainClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1524">
-              <caret line="79" column="53" lean-forward="false" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="53" />
+            <state relative-caret-position="176">
+              <caret line="154" column="48" lean-forward="true" selection-start-line="154" selection-start-column="48" selection-end-line="154" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4098#6142#0" expanded="true" />
-                <element signature="e#6141#6142#0" expanded="true" />
-                <element signature="e#6260#6261#0" expanded="true" />
-                <element signature="e#6300#6301#0" expanded="true" />
-                <element signature="e#6496#6946#0" expanded="true" />
-                <element signature="e#6945#6946#0" expanded="true" />
-                <element signature="e#7013#7615#0" expanded="true" />
-                <element signature="e#7614#7615#0" expanded="true" />
+                <element signature="e#2522#2871#0" expanded="true" />
+                <element signature="e#2870#2871#0" expanded="true" />
+                <element signature="e#4645#6108#0" expanded="true" />
+                <element signature="e#6107#6108#0" expanded="true" />
+                <element signature="e#6226#6227#0" expanded="true" />
+                <element signature="e#6266#6267#0" expanded="true" />
+                <element signature="e#6559#7009#0" expanded="true" />
+                <element signature="e#7008#7009#0" expanded="true" />
+                <element signature="e#7076#8060#0" expanded="true" />
+                <element signature="e#8059#8060#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/cheng/LoginManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-138">
+              <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsoupHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/cheng/JsoupHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,26 +104,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/cheng/Utils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProperityHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/cheng/ProperityHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state relative-caret-position="1">
+              <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,7 +119,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
               <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,21 +129,11 @@
       <file leaf-file-name="FileHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/cheng/FileHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state relative-caret-position="420">
+              <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/classes/User.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -136,9 +143,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="645">
               <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -167,25 +172,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>172.</find>
-      <find>172</find>
-      <find>ip</find>
-      <find>ma</find>
-      <find>main</find>
-      <find>S</find>
-      <find>Syste</find>
-      <find>System</find>
-      <find>System.</find>
-      <find>System.ou</find>
-      <find>System.out</find>
-      <find>System.out.</find>
-      <find>System.out.p</find>
-      <find>System.out.pri</find>
-      <find>System.out.prin</find>
-      <find>System.out.print</find>
-      <find>System.out.printl</find>
-      <find>System.out.println</find>
-      <find>System.out.println()</find>
       <find>System.out.println(s)</find>
       <find>System.out.println(st)</find>
       <find>System.out.println(sta)</find>
@@ -196,6 +182,26 @@
       <find>User</find>
       <find>User/c</find>
       <find>User/</find>
+      <find />
+      <find>ji</find>
+      <find>jie</find>
+      <find>jie x</find>
+      <find>解析</find>
+      <find>解析ch</find>
+      <find>解析chu</find>
+      <find>解析chu c</find>
+      <find>解析chu cuo</find>
+      <find>解析出错</find>
+      <find>d</find>
+      <find>diao x</find>
+      <find>diao xia</find>
+      <find>diao xian</find>
+      <find>diao xian l</find>
+      <find>掉线了</find>
+      <find>掉线</find>
+      <find>掉线l</find>
+      <find>掉线la</find>
+      <find>掉线啦</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -216,7 +222,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/User.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/cheng/cheng/ECUST_WIN.java" />
         <option value="$PROJECT_DIR$/target/classes/user/User.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cheng/cheng/JsoupHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cheng/cheng/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cheng/cheng/LoginOption.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cheng/cheng/SwingLoginExample.java" />
@@ -233,10 +238,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cheng/cheng/LoginWireLess.java" />
         <option value="$PROJECT_DIR$/src/test/java/FileHelperTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/OnlineTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cheng/cheng/ProperityHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cheng/cheng/FileHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/OnlineTestTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cheng/cheng/OnlineTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cheng/cheng/JsoupHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cheng/cheng/FileHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cheng/cheng/ProperityHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cheng/cheng/MainClass.java" />
       </list>
     </option>
@@ -1211,7 +1217,7 @@
       <workItem from="1496755484879" duration="2551000" />
       <workItem from="1496758108241" duration="8577000" />
       <workItem from="1496768575562" duration="4541000" />
-      <workItem from="1496813839761" duration="2304000" />
+      <workItem from="1496813839761" duration="7254000" />
     </task>
     <servers />
   </component>
@@ -1248,7 +1254,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47575000" />
+    <option name="totallyTimeSpent" value="52525000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1273,13 +1279,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.56131685" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.8452555" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8452555" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50364965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26875514" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1291,7 +1298,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1335,13 +1341,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/cheng/cheng/MainClass.java</url>
-          <line>85</line>
+          <line>100</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/cheng/cheng/MainClass.java</url>
-          <line>132</line>
+          <line>148</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
@@ -1391,9 +1397,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1422,9 +1426,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1590">
           <caret line="106" column="2" lean-forward="false" selection-start-line="106" selection-start-column="2" selection-end-line="106" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1468,9 +1470,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1591,29 +1591,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/cheng/JsoupHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="27" column="49" lean-forward="false" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/WireLessLoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/cheng/LoginManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="13" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1665,6 +1647,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="274" column="11" lean-forward="false" selection-start-line="274" selection-start-column="11" selection-end-line="274" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1690,7 +1673,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1708,9 +1693,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1721,26 +1704,6 @@
           <folding>
             <element signature="e#20814#20815#0" expanded="false" />
             <element signature="e#20859#20860#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/cheng/ProperityHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/cheng/FileHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1765,20 +1728,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/cheng/MainClass.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/cheng/JsoupHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1524">
-          <caret line="79" column="53" lean-forward="false" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="53" />
+        <state relative-caret-position="420">
+          <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/cheng/FileHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4098#6142#0" expanded="true" />
-            <element signature="e#6141#6142#0" expanded="true" />
-            <element signature="e#6260#6261#0" expanded="true" />
-            <element signature="e#6300#6301#0" expanded="true" />
-            <element signature="e#6496#6946#0" expanded="true" />
-            <element signature="e#6945#6946#0" expanded="true" />
-            <element signature="e#7013#7615#0" expanded="true" />
-            <element signature="e#7614#7615#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/cheng/ProperityHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/cheng/MainClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="154" column="48" lean-forward="true" selection-start-line="154" selection-start-column="48" selection-end-line="154" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2522#2871#0" expanded="true" />
+            <element signature="e#2870#2871#0" expanded="true" />
+            <element signature="e#4645#6108#0" expanded="true" />
+            <element signature="e#6107#6108#0" expanded="true" />
+            <element signature="e#6226#6227#0" expanded="true" />
+            <element signature="e#6266#6267#0" expanded="true" />
+            <element signature="e#6559#7009#0" expanded="true" />
+            <element signature="e#7008#7009#0" expanded="true" />
+            <element signature="e#7076#8060#0" expanded="true" />
+            <element signature="e#8059#8060#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/cheng/LoginManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-138">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

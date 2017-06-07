@@ -39,8 +39,8 @@ public class JsoupHelper {
 
 
         } catch (IOException e) {
-            System.out.println("解析出错！");
-            e.printStackTrace();
+//            System.out.println("解析出错！");
+//            e.printStackTrace();
         }
 
         return attrs;
