@@ -50,7 +50,11 @@ class MyTimerTask extends TimerTask {
                         mainFrame.statusLabel.setText("掉线啦 点我忽略");
                         mainFrame.statusLabel.setForeground(Color.RED);
                         mainFrame.setState(JFrame.NORMAL);
-                        mainFrame.setLocation(mainFrame.xLocation, mainFrame.yLocation);//设置窗口居中显示
+
+                        // 当前 登录页面没有获得焦点，则将弹窗位置设置在屏幕中间
+                        if (mainFrame.getFocusOwner() == null) {
+                            mainFrame.setLocation(mainFrame.xLocation, mainFrame.yLocation);//设置窗口居中显示
+                        }
                         mainFrame.setAlwaysOnTop(true);
                     }else {
                         mainFrame.statusLabel.setText("掉线啦");

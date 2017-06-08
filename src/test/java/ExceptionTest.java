@@ -3,21 +3,14 @@
  */
 public class ExceptionTest {
     public static void main(String[] args) {
-        while (true) {
-            try {
-                int a = 1;
-                throw new Exception();
 
-            } catch (Exception e) {
 
-            } finally {
-                try {
-                    throw new Exception();
-                } catch (Exception e) {
-                    System.out.println("¼ÌÐøÖ´ÐÐ");
-                }
-            }
+        boolean flag = true;
+        while (flag) {
+            System.out.println("inside ");
+            flag = false;
         }
+
     }
 }
 

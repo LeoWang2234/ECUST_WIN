@@ -14,7 +14,7 @@ import java.awt.*;
 public class MainFrame extends JFrame {
     public JTextField jTextField;//定义文本框组件
     public JPasswordField jPasswordField;//定义密码框组件
-    public JLabel jLabel1, jLabel2, statusLabel,statusSignal;
+    public JLabel jLabel1, jLabel2, statusLabel,lstatusSignal,rstatusSignal;
     public JPanel jp1, jp2, jp3, status;
     public JButton jb1, jb2;//创建按钮
     public volatile boolean ignorePop = false; //  掉线后忽略弹窗
@@ -29,7 +29,8 @@ public class MainFrame extends JFrame {
         jLabel1 = new JLabel("用户:");
         jLabel2 = new JLabel("密码:");
         statusLabel = new JLabel();
-        statusSignal = new JLabel();
+        lstatusSignal = new JLabel();
+        rstatusSignal = new JLabel();
 
         jb1 = new JButton("有线登录");
         jb2 = new JButton("无线登录");
@@ -64,8 +65,9 @@ public class MainFrame extends JFrame {
         jp3.add(jb1);
         jp3.add(jb2); //第三块面板添加确认和取消
 
+        status.add(rstatusSignal);
         status.add(statusLabel);
-        status.add(statusSignal);
+        status.add(lstatusSignal);
 
         //        jp3.setLayout(new FlowLayout());  　　//因为JPanel默认布局方式为FlowLayout，所以可以注销这段代码.
         this.add(jp1);

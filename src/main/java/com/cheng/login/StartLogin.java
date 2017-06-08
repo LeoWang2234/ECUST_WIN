@@ -3,6 +3,7 @@ import com.cheng.helper.ProperityHelper;
 import com.cheng.helper.Utils;
 import com.cheng.ui.MainFrame;
 
+import javax.swing.*;
 import java.awt.*;   //导入必要的包
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -47,22 +48,21 @@ public class StartLogin{
         // 毫秒执行一次。
         globalTimer.scheduleAtFixedRate(onlineTestTask, 0, 5000, TimeUnit.MILLISECONDS);
 
-        while (true) {
+        boolean isTerminated = false;
+        while (!isTerminated) {
             try {
+                isTerminated = globalTimer.isTerminated();
+                System.out.println(isTerminated);
+                mainFrame.lstatusSignal.setText("<--");
+                mainFrame.rstatusSignal.setText("-->");
+                Thread.sleep(1000);
+                mainFrame.lstatusSignal.setText("");
+                mainFrame.rstatusSignal.setText("");
+                Thread.sleep(1000);
 
-                mainFrame.statusSignal.setText("*\\*");
-                Thread.sleep(1000);
-                mainFrame.statusSignal.setText("*|*");
-                Thread.sleep(1000);
-                mainFrame.statusSignal.setText("*/*");
-                Thread.sleep(1000);
-                mainFrame.statusSignal.setText("*-*");
-                Thread.sleep(1000);
             } catch (InterruptedException e) {
             }
-            System.out.println(globalTimer.isTerminated());
         }
-
     }
 
     private static void loginWithWireListener() {
