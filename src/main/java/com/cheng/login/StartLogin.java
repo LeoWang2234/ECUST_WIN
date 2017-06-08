@@ -8,13 +8,16 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.concurrent.TimeUnit;
 
 public class StartLogin{
 
     static MainFrame mainFrame = new MainFrame();
 
     // 定时检测是否掉线的定时器
-    static java.util.Timer timer = new java.util.Timer(true);
+    static java.util.concurrent.ScheduledExecutorService globalTimer = java.util.concurrent.Executors.newSingleThreadScheduledExecutor();
+
+//    static java.util.Timer timer = new java.util.Timer(true);
 
 
     public static void main(String[] args) {
@@ -42,11 +45,23 @@ public class StartLogin{
 
         // delay为long,period为long：从现在起过delay毫秒以后，每隔period
         // 毫秒执行一次。
-        timer.schedule(onlineTestTask, 0, 3000);
+        globalTimer.scheduleAtFixedRate(onlineTestTask, 0, 5000, TimeUnit.MILLISECONDS);
 
+        while (true) {
+            try {
 
-
-
+                mainFrame.statusSignal.setText("*\\*");
+                Thread.sleep(1000);
+                mainFrame.statusSignal.setText("*|*");
+                Thread.sleep(1000);
+                mainFrame.statusSignal.setText("*/*");
+                Thread.sleep(1000);
+                mainFrame.statusSignal.setText("*-*");
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+            }
+            System.out.println(globalTimer.isTerminated());
+        }
 
     }
 
@@ -121,7 +136,17 @@ public class StartLogin{
                             mainFrame.jb2.setForeground(Color.black);
                         }
                     }).start();
-                }else {
+                }else if(status == LoginStatus.FAILED.getIndex()){
+                    new Thread(new Runnable() {
+                        public void run() {
+                            mainFrame.statusLabel.setText("登录失败");
+                            mainFrame.statusLabel.setForeground(Color.red);
+                            mainFrame.jb2.setText("点击重试");
+                            mainFrame.jb2.setForeground(Color.red);
+                        }
+                    }).start();
+                }
+                else{
                     new Thread(new Runnable() {
                         public void run() {
                             mainFrame.statusLabel.setText("参数异常");

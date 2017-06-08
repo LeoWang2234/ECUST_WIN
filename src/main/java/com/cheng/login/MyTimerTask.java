@@ -18,6 +18,7 @@ class MyTimerTask extends TimerTask {
         this.mainFrame = mainFrame;
     }
     public void run() {
+
         Boolean status = OnlineStatus.sendGet("http://www.baidu.com");
         if (status) {
             mainFrame.ignorePop = false;
@@ -39,7 +40,9 @@ class MyTimerTask extends TimerTask {
             // 如果在线，再继续循环
             if (status) {
                 return;
+
             }
+
             new Thread(new Runnable() {
                 public void run() {
                     if (!mainFrame.ignorePop) {
@@ -59,7 +62,6 @@ class MyTimerTask extends TimerTask {
                     mainFrame.jb1.setForeground(Color.black);
                 }
             }).start();
-
         }
     }
 }
