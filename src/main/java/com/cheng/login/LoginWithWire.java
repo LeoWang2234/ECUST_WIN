@@ -41,7 +41,7 @@ public class LoginWithWire extends Login {
         wr.flush();
         try {
             wr.close();
-        } catch (IOException e) {
+        } catch (Exception e) {
         }
 
         BufferedReader in = new BufferedReader(
@@ -96,7 +96,7 @@ public class LoginWithWire extends Login {
         finally {
             try {
                 inputStream.close();
-            } catch (IOException e) {
+            } catch (Exception e) {
 
             }
         }

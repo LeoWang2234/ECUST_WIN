@@ -38,7 +38,7 @@ public class JsoupHelper {
 
 
 
-        } catch (IOException e) {
+        } catch (Exception e) {
 //            System.out.println("½âÎö³ö´í£¡");
 //            e.printStackTrace();
         }
