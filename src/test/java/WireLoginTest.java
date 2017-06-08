@@ -1,12 +1,11 @@
-import com.cheng.cheng.JsoupHelper;
-import com.cheng.cheng.LoginWithWire;
+import com.cheng.helper.JsoupHelper;
+import com.cheng.login.LoginWithWire;
 import org.junit.Ignore;
-import org.junit.Test;
 
 import java.util.Map;
 
 /**
- * Created by cheng on 2017/6/6.
+ * Created by login on 2017/6/6.
  */
 public class WireLoginTest {
 

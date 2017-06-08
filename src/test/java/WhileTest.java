@@ -1,5 +1,5 @@
 /**
- * Created by cheng on 2017/6/7.
+ * Created by login on 2017/6/7.
  */
 public class WhileTest {
     public static void main(String[] args) {

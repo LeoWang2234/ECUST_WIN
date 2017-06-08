@@ -1,13 +1,13 @@
-import com.cheng.cheng.OnlineTest;
+import com.cheng.login.OnlineStatus;
 import org.junit.Test;
 
 /**
- * Created by cheng on 2017/6/7.
+ * Created by login on 2017/6/7.
  */
 public class OnlineTestTest
 {
 
-    OnlineTest onlineTest = new OnlineTest();
+    OnlineStatus onlineTest = new OnlineStatus();
 
     @Test
     public void test() {
@@ -21,7 +21,7 @@ public class OnlineTestTest
 
             onlineTest.sendGet("http://www.baidu.com");
 
-            System.out.println(OnlineTest.connected);
+            System.out.println(OnlineStatus.connected);
 
         }
 
