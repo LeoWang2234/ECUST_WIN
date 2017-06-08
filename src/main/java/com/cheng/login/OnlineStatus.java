@@ -79,7 +79,9 @@ public class OnlineStatus {
         }finally {
             try {
                 in.close();
-            } catch (IOException e) {
+                // 之前这个 catch 的 IOException ，但是发现定时器会挂掉，后来发现是抛出的 NullPointerException
+                // 所以修改为 Exception
+            } catch (Exception e) {
             }
         }
         // 使用finally块来关闭输入流

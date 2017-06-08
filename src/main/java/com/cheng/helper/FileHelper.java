@@ -10,8 +10,8 @@ import java.io.IOException;
  */
 public class FileHelper {
 
-//    static String filePath = "C:\\";
-    static String filePath = "/Users/cheng/Desktop";
+    static String filePath = "C:\\";
+//    static String filePath = "/Users/cheng/Desktop";
     static String fileName = "User.properties";
 
     public static boolean exists() {

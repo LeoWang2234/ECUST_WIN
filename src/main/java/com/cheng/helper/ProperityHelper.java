@@ -27,8 +27,8 @@ public class ProperityHelper {
             }
         }
 
-//        filePath = "C:\\User.properties";
-        filePath = "/Users/cheng/Desktop/User.properties";
+        filePath = "C:\\User.properties";
+//        filePath = "/Users/cheng/Desktop/User.properties";
 
     }
 

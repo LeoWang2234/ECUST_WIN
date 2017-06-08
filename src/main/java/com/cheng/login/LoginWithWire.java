@@ -54,7 +54,7 @@ public class LoginWithWire extends Login {
         }
         try {
             in.close();
-        } catch (IOException e) {
+        } catch (Exception e) {
         }
 
         return response.toString();

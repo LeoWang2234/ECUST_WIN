@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="ECUST_WIN:jar">
+  <artifact type="jar" name="ECUST_WIN:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/ECUST_WIN_jar</output-path>
     <root id="archive" name="ECUST_WIN.jar">
       <element id="directory" name="META-INF">
