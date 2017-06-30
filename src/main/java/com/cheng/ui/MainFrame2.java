@@ -24,18 +24,17 @@ import java.util.TimerTask;
 public class MainFrame2 extends MainFrame {
 
 
-   static JLabel dateLabel = new JLabel("",JLabel.CENTER);
-   static JLabel timeLabel = new JLabel("",JLabel.CENTER);
+    static JLabel dateLabel = new JLabel("", JLabel.CENTER);
+    static JLabel timeLabel = new JLabel("", JLabel.CENTER);
 
     SimpleDateFormat df = new SimpleDateFormat("MM月dd日(EE)");//设置日期格式
-
 
 
     public MainFrame2() {
 
         jTextField = new JTextField(10);
         jPasswordField = new JPasswordField(10);
-        statusLabel = new JLabel("",JLabel.CENTER);
+        statusLabel = new JLabel("", JLabel.CENTER);
 
         dateLabel.setFont(new Font("SAN_SERIF", Font.CENTER_BASELINE, 18));
         timeLabel.setFont(new Font("SAN_SERIF", Font.BOLD, 25));
@@ -51,10 +50,10 @@ public class MainFrame2 extends MainFrame {
 
         dateLabel.setPreferredSize(new Dimension(150, 80));
         timeLabel.setPreferredSize(new Dimension(150, 50));
-        statusLabel.setPreferredSize(new Dimension(150,0));
+        statusLabel.setPreferredSize(new Dimension(150, 0));
 
         //设置布局
-        this.setLayout(new GridLayout(4, 1,0,0));
+        this.setLayout(new GridLayout(4, 1, 0, 0));
 
         Toolkit kit = Toolkit.getDefaultToolkit(); //定义工具包
         Dimension screenSize = kit.getScreenSize(); //获取屏幕的尺寸
@@ -163,6 +162,7 @@ public class MainFrame2 extends MainFrame {
 
         class updateTime extends TimerTask {
             private int hour, min, sec;
+
             public void run() {
 //                GregorianCalendar date = new GregorianCalendar();
                 Date date = new Date();
@@ -174,8 +174,7 @@ public class MainFrame2 extends MainFrame {
                 timeLabel.setText(String.format("%1$,02d", hour) + ":"
                         + String.format("%1$,02d", min) + ":"
                         + String.format("%1$,02d", sec));
-
-                date = null;
+                System.gc();
             }
         }
         java.util.concurrent.ScheduledExecutorService globalTimer = com.cheng.helper.Timer.getGlobalTimer();

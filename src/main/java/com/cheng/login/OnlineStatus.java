@@ -7,6 +7,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by login on 2017/6/7.
@@ -24,11 +26,10 @@ public class OnlineStatus {
     }
 
     public static Boolean sendGet() {
-        String result = "";
-        BufferedReader in = null;
+        HttpURLConnection conn = null;
         try {
             // 打开和URL之间的连接
-            HttpURLConnection conn = (HttpURLConnection) realUrl.openConnection();
+            conn = (HttpURLConnection) realUrl.openConnection();
             // 设置通用的请求属性
             conn.setRequestProperty("accept", "*/*");
             conn.setRequestProperty("connection", "Keep-Alive");
@@ -46,31 +47,23 @@ public class OnlineStatus {
             Map<String, List<String>> map = conn.getHeaderFields();
             // 遍历所有的响应头字段
             for (String key : map.keySet()) {
-                System.out.println(key + "--->" + map.get(key));
+                if(key!=null && key.equals("Content-Length")){
+                    String s = map.get(key).toString();
+                    System.out.println(s);
+                    int length = Integer.valueOf(s.substring(1,s.length()-1));
+                    if ( length<5000){
+                        return false;
+                    }
+                }
             }
-//             定义BufferedReader输入流来读取URL的响应
-
-            in = new BufferedReader(
-                    new InputStreamReader(conn.getInputStream()));
-            String line;
-            while ((line = in.readLine()) != null) {
-                result += "/n" + line;
-            }
-
-            if (result.length() < 5000) {
-                return false;
-            }else {
-                return true;
-            }
+            return true;
 
         } catch (Exception e) {
         }finally {
             try {
-                in.close();
             } catch (Exception e) {
             }
         }
-        // 使用finally块来关闭输入流
         return false;
     }
 
