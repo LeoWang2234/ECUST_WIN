@@ -27,18 +27,18 @@ public class FrameHelper {
 //        return false;
 //    }
 
-    static  MainFrame mainFrame = new MainFrame();
+//    static  MainFrame mainFrame = new MainFrame();
 
     public static void main(String[] args) {
         // some code goes here
-        Component[] components1= mainFrame.getComponents();
-
-        System.out.println(components1.length);
-
-        for(int i=0;i<components1.length;i++)
-        {
-            System.out.println(components1[i].getName());
-
-        }
+//        Component[] components1= mainFrame.getComponents();
+//
+//        System.out.println(components1.length);
+//
+//        for(int i=0;i<components1.length;i++)
+//        {
+//            System.out.println(components1[i].getName());
+//
+//        }
     }
 }

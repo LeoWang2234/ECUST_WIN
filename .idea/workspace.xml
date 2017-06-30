@@ -7,28 +7,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6039730b-a0e0-4043-8cc0-c54cf13197c9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cheng/ui/Clock.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cheng/helper/Timer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cheng/ui/MainFrame1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cheng/ui/MainFrame2.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$2$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$3$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$3$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$3.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ECUST_WIN_jar/ECUST_WIN.jar" afterPath="$PROJECT_DIR$/out/artifacts/ECUST_WIN_jar/ECUST_WIN.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/MyTimerTask$2.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/login/MyTimerTask$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/MyTimerTask.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/login/MyTimerTask.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/OnlineStatus.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/login/OnlineStatus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$2$1.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$2$2.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$2$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$2.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$3$1.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$3$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$3$2.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$3$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$3$3.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$3$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$3.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/helper/FrameHelper.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/helper/FrameHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$1.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/ui/Clock.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/ui/Clock.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/ui/clockPanel.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/ui/clockPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/ui/panel3$myActionListener.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/ui/panel3$myActionListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/ui/panel3.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/ui/panel3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ECUST_WIN.iml" afterPath="$PROJECT_DIR$/ECUST_WIN.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cheng/login/MyTimerTask.java" afterPath="$PROJECT_DIR$/src/main/java/com/cheng/login/MyTimerTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cheng/login/OnlineStatus.java" afterPath="$PROJECT_DIR$/src/main/java/com/cheng/login/OnlineStatus.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cheng/helper/FrameHelper.java" afterPath="$PROJECT_DIR$/src/main/java/com/cheng/helper/FrameHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cheng/login/StartLogin.java" afterPath="$PROJECT_DIR$/src/main/java/com/cheng/login/StartLogin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cheng/ui/Clock.java" afterPath="$PROJECT_DIR$/src/main/java/com/cheng/ui/Clock.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cheng/ui/MainFrame.java" afterPath="$PROJECT_DIR$/src/main/java/com/cheng/ui/MainFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/user/User.properties" afterPath="$PROJECT_DIR$/target/classes/user/User.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,8 +47,8 @@
       <file leaf-file-name="StartLogin.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/StartLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+            <state relative-caret-position="456">
+              <caret line="62" column="3" lean-forward="false" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,72 +56,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginStatus.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/LoginStatus.java">
+      <file leaf-file-name="StreamTool.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/helper/StreamTool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="52" lean-forward="false" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+            <state relative-caret-position="105">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginWireLess.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/LoginWireLess.java">
+      <file leaf-file-name="ProperityHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/helper/ProperityHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-84">
-              <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+            <state relative-caret-position="176">
+              <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/LoginManager.java">
+      <file leaf-file-name="MainFrame2.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/ui/MainFrame2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="39" column="53" lean-forward="false" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
+            <state relative-caret-position="113">
+              <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Font.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/awt/Font.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="566" column="11" lean-forward="false" selection-start-line="566" selection-start-column="11" selection-end-line="566" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/Login.java">
+      <file leaf-file-name="JPanel.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/javax/swing/JPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="57" column="20" lean-forward="false" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExceptionTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ExceptionTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OnlineStatus.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/OnlineStatus.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="31" column="64" lean-forward="false" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyTimerTask.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/MyTimerTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="42" column="39" lean-forward="false" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
-              <folding />
+            <state relative-caret-position="-317">
+              <caret line="115" column="11" lean-forward="false" selection-start-line="115" selection-start-column="11" selection-end-line="115" selection-end-column="11" />
+              <folding>
+                <element signature="e#3040#3041#0" expanded="true" />
+                <element signature="e#3066#3067#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,18 +114,41 @@
       <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/ui/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            <state relative-caret-position="165">
+              <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Clock.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JLabel.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/javax/swing/JLabel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="771">
+              <caret line="233" column="11" lean-forward="false" selection-start-line="233" selection-start-column="11" selection-end-line="233" selection-end-column="11" />
+              <folding>
+                <element signature="e#7455#7456#0" expanded="true" />
+                <element signature="e#7494#7495#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Clock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/ui/Clock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="38" column="2" lean-forward="true" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+            <state relative-caret-position="150">
+              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainFrame1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/ui/MainFrame1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -150,15 +160,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jie</find>
-      <find>jie x</find>
-      <find>解析</find>
       <find>解析ch</find>
       <find>解析chu</find>
       <find>解析chu c</find>
@@ -186,7 +194,15 @@
       <find>X</find>
       <find>x</find>
       <find>xLocation</find>
+      <find>MainFrame</find>
+      <find>mainFrame.</find>
+      <find>status</find>
     </findStrings>
+    <replaceStrings>
+      <replace>MainFrame1</replace>
+      <replace>thish</replace>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -237,15 +253,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cheng/helper/JsoupHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cheng/login/LoginWithWire.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cheng/helper/FileHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cheng/helper/ProperityHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cheng/helper/FrameHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ExceptionTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cheng/login/StartLogin.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cheng/login/MyTimerTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cheng/login/OnlineStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cheng/login/LoginWireLess.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cheng/ui/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cheng/ui/MainFrame1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cheng/helper/FrameHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cheng/helper/Timer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cheng/ui/Clock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cheng/helper/ProperityHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cheng/ui/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cheng/login/StartLogin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cheng/ui/MainFrame2.java" />
       </list>
     </option>
   </component>
@@ -735,6 +754,40 @@
               <option name="myItemId" value="login" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartLogin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ECUST_WIN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ECUST_WIN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cheng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -780,6 +833,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/test" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -788,9 +844,6 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/com/cheng/cheng" />
       <recent name="$PROJECT_DIR$/src/main/java/com/cheng" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -805,7 +858,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Clock">
+  <component name="RunManager" selected="Application.StartLogin">
     <configuration default="false" name="StartLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1319,8 +1372,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Clock" />
-        <item index="1" class="java.lang.String" itemvalue="Application.StartLogin" />
+        <item index="0" class="java.lang.String" itemvalue="Application.StartLogin" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Clock" />
         <item index="2" class="java.lang.String" itemvalue="Application.LoginWireLess" />
         <item index="3" class="java.lang.String" itemvalue="Application.OnlineStatus" />
         <item index="4" class="java.lang.String" itemvalue="Application.ExceptionTest" />
@@ -1382,7 +1435,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79031000" />
+    <option name="totallyTimeSpent" value="89382000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1394,19 +1447,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="23" width="1254" height="777" extended-state="6" />
-    <editor active="true" />
+    <frame x="4" y="23" width="1254" height="777" extended-state="1" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.56131685" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6160584" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6160584" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50364965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1483,59 +1535,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/WireLessLoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/LoginManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/LoginWireLess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/user/User.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/ECUST_WIN.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Exception.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar!/org/jsoup/nodes/Node.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="55" column="16" lean-forward="false" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/test/User.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/user/demo1.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -1564,9 +1563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1642,9 +1638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1659,19 +1652,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/cheng/ICallback.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/helper/StreamTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/cheng/LoginOption.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/OnlineTestTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1680,30 +1664,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/helper/JsoupHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/helper/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/LoginWithWire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="56" column="10" lean-forward="false" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1731,14 +1691,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/helper/ProperityHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1811,17 +1763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/helper/FrameHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1841,10 +1782,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/MyTimerTask.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/helper/FrameHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="42" column="39" lean-forward="false" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+        <state relative-caret-position="155">
+          <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/helper/Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/TimerTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="85" column="14" lean-forward="false" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1853,6 +1813,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="31" column="64" lean-forward="false" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/MyTimerTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/LoginWithWire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="56" column="10" lean-forward="false" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/LoginWireLess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1873,45 +1861,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/LoginWireLess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="630">
           <caret line="57" column="20" lean-forward="false" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/StartLogin.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/helper/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        <state relative-caret-position="420">
+          <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/helper/JsoupHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/awt/GridLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="171" column="10" lean-forward="true" selection-start-line="171" selection-start-column="10" selection-end-line="171" selection-end-column="10" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#4996#4997#0" expanded="true" />
+            <element signature="e#5034#5035#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/ui/MainFrame.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/javax/swing/JLabel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        <state relative-caret-position="771">
+          <caret line="233" column="11" lean-forward="false" selection-start-line="233" selection-start-column="11" selection-end-line="233" selection-end-column="11" />
+          <folding>
+            <element signature="e#7455#7456#0" expanded="true" />
+            <element signature="e#7494#7495#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/helper/StreamTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/helper/ProperityHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/ui/Clock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="38" column="2" lean-forward="true" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+        <state relative-caret-position="150">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/javax/swing/JPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-317">
+          <caret line="115" column="11" lean-forward="false" selection-start-line="115" selection-start-column="11" selection-end-line="115" selection-end-column="11" />
+          <folding>
+            <element signature="e#3040#3041#0" expanded="true" />
+            <element signature="e#3066#3067#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/StartLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="62" column="3" lean-forward="false" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/ui/MainFrame1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/ui/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/awt/Font.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="566" column="11" lean-forward="false" selection-start-line="566" selection-start-column="11" selection-end-line="566" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/ui/MainFrame2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

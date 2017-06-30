@@ -13,26 +13,20 @@ class clockPanel extends Panel
 {
     Panel p1, p2, p3;
     JLabel label1;
-    int year, month, day, week;
 
     public clockPanel()
     {
         setBackground(Color.yellow);
         setPreferredSize(new Dimension(250, 320));
         setLayout(new BorderLayout(10, 10));
-        /**************************************************************************/
         p1 = new Panel();
         label1 = new JLabel();
 
         SimpleDateFormat df = new SimpleDateFormat("yyyy年MM月dd日(EE)");//设置日期格式
         label1.setText(df.format(new Date()));
         p1.add(label1);
-        /**************************************************************************/
-//        p2 = new panel3();
-        /**************************************************************************/
         p3 = new panel3();
 
-        /**************************************************************************/
         this.add(p1, BorderLayout.NORTH);
 //        this.add(p2, BorderLayout.CENTER);
         this.add(p3, BorderLayout.SOUTH);
