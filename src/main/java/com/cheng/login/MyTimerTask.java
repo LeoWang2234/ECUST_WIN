@@ -1,6 +1,7 @@
 package com.cheng.login;
 
 import com.cheng.ui.MainFrame;
+import sun.jvm.hotspot.ui.table.LongCellRenderer;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,17 +15,25 @@ import java.util.TimerTask;
 class MyTimerTask extends TimerTask {
 
     MainFrame mainFrame;
+    JLabel label;
     public MyTimerTask(MainFrame mainFrame) {
         this.mainFrame = mainFrame;
+        label = new JLabel("Nothing is Impossible",JLabel.CENTER);
+        label.setFont(new Font("",Font.BOLD, 15));
     }
+
     public void run() {
 
         Boolean status = OnlineStatus.sendGet("http://www.baidu.com");
         if (status) {
             mainFrame.ignorePop = false;
             mainFrame.setAlwaysOnTop(false);
+
             new Thread(new Runnable() {
                 public void run() {
+                    mainFrame.remove(mainFrame.jp3);
+                    mainFrame.add(label);
+                    label.updateUI();
                     mainFrame.statusLabel.setText("当前在线");
                     mainFrame.statusLabel.setForeground(Color.BLUE);
                     mainFrame.jb2.setText("无线登录");
@@ -50,6 +59,9 @@ class MyTimerTask extends TimerTask {
 
             new Thread(new Runnable() {
                 public void run() {
+                    mainFrame.remove(label);
+                    mainFrame.add(mainFrame.jp3);
+                    mainFrame.jp3.updateUI();
                     if (!mainFrame.ignorePop) {
                         System.out.println(mainFrame.ignorePop);
                         mainFrame.statusLabel.setText("掉线啦 点我忽略");
