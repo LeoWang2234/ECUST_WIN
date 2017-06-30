@@ -5,6 +5,8 @@ import sun.jvm.hotspot.ui.table.LongCellRenderer;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.TimerTask;
 
 /**
@@ -16,10 +18,19 @@ class MyTimerTask extends TimerTask {
 
     MainFrame mainFrame;
     JLabel label;
-    public MyTimerTask(MainFrame mainFrame) {
+    public MyTimerTask(final MainFrame mainFrame) {
         this.mainFrame = mainFrame;
         label = new JLabel("Nothing is Impossible",JLabel.CENTER);
         label.setFont(new Font("",Font.BOLD, 15));
+        label.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                mainFrame.remove(label);
+                mainFrame.add(mainFrame.jp3);
+                mainFrame.jp3.updateUI();
+            }
+        });
     }
 
     public void run() {
