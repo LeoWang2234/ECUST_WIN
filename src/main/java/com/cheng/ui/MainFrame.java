@@ -15,7 +15,7 @@ public class MainFrame extends JFrame {
     public JTextField jTextField;//定义文本框组件
     public JPasswordField jPasswordField;//定义密码框组件
     public JLabel jLabel1, jLabel2, statusLabel,lstatusSignal,rstatusSignal;
-    public JPanel jp1, jp2, jp3, status;
+    public JPanel jp1, jp2, jp3, status,clock;
     public JButton jb1, jb2;//创建按钮
     public volatile boolean ignorePop = false; //  掉线后忽略弹窗
 
@@ -49,8 +49,11 @@ public class MainFrame extends JFrame {
         Dimension screenSize = kit.getScreenSize(); //获取屏幕的尺寸
         int screenWidth = screenSize.width; //获取屏幕的宽
         int screenHeight = screenSize.height; //获取屏幕的高
-        xLocation = screenWidth / 2 - windowWidth / 2 - 100;
-        yLocation = screenHeight / 2 - windowHeight / 2 - 100;
+//        xLocation = screenWidth / 2 - windowWidth / 2 - 100;
+        xLocation = screenWidth-300;
+        yLocation = 0;
+
+//        yLocation = screenHeight / 2 - windowHeight / 2 - 100;
         this.setLocation(xLocation, yLocation);//设置窗口居中显示
 
 

@@ -32,8 +32,8 @@ public class OnlineStatus {
             conn.setRequestProperty("connection", "Keep-Alive");
             conn.setRequestProperty("user-agent",
                     "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)");
-            conn.setConnectTimeout(500);
-            conn.setReadTimeout(500);
+            conn.setConnectTimeout(1000);
+            conn.setReadTimeout(1000);
             conn.setRequestMethod("GET");
 
             // 建立实际的连接
@@ -45,8 +45,8 @@ public class OnlineStatus {
             // 获取所有响应头字段
             Map<String, List<String>> map = conn.getHeaderFields();
             // 遍历所有的响应头字段
-//            for (String key : map.keySet()) {
-//                System.out.println(key + "--->" + map.get(key));
+            for (String key : map.keySet()) {
+                System.out.println(key + "--->" + map.get(key));
 //                if (key!=null && key.equals("Connection")){
 //                    if (map.get(key).get(0).equals("close")) {
 //                        System.out.println(map.get(key).get(0));
@@ -61,8 +61,8 @@ public class OnlineStatus {
 //                        break;
 //                    }
 //                }
-
-//            }
+//
+            }
 //             定义BufferedReader输入流来读取URL的响应
 
             in = new BufferedReader(

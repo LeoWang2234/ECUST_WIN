@@ -63,6 +63,11 @@ public class StartLogin{
             } catch (InterruptedException e) {
             }
         }
+
+        // 程序走到这里说明跳出循环了，也就是定时器不工作啦
+        mainFrame.lstatusSignal.setText("-->");
+        mainFrame.rstatusSignal.setText("<--");
+        mainFrame.statusLabel.setText("自动检测挂啦");
     }
 
     private static void loginWithWireListener() {
