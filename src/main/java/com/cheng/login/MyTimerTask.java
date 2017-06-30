@@ -17,10 +17,10 @@ import java.util.TimerTask;
 class MyTimerTask extends TimerTask {
 
     MainFrame mainFrame;
-    JLabel label;
+    JLabel label = new JLabel("Nothing is Impossible",JLabel.CENTER);
+
     public MyTimerTask(final MainFrame mainFrame) {
         this.mainFrame = mainFrame;
-        label = new JLabel("Nothing is Impossible",JLabel.CENTER);
         label.setFont(new Font("",Font.BOLD, 15));
         label.addMouseListener(new MouseAdapter() {
             @Override
@@ -35,7 +35,7 @@ class MyTimerTask extends TimerTask {
 
     public void run() {
 
-        Boolean status = OnlineStatus.sendGet("http://www.baidu.com");
+        Boolean status = OnlineStatus.sendGet();
         if (status) {
             mainFrame.ignorePop = false;
             mainFrame.setAlwaysOnTop(false);
@@ -60,7 +60,7 @@ class MyTimerTask extends TimerTask {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
             }
-            status = OnlineStatus.sendGet("http://www.baidu.com");
+            status = OnlineStatus.sendGet();
             // 若是判断掉线啦，则再重新请求一次，防止误判，但是有可能会增加响应时间
             // 如果在线，再继续循环
             if (status) {
@@ -74,7 +74,6 @@ class MyTimerTask extends TimerTask {
                     mainFrame.add(mainFrame.jp3);
                     mainFrame.jp3.updateUI();
                     if (!mainFrame.ignorePop) {
-                        System.out.println(mainFrame.ignorePop);
                         mainFrame.statusLabel.setText("掉线啦 点我忽略");
                         mainFrame.statusLabel.setForeground(Color.RED);
                         mainFrame.setState(JFrame.NORMAL);

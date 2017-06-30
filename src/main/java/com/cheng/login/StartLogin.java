@@ -1,13 +1,7 @@
 package com.cheng.login;
-import com.cheng.helper.*;
-import com.cheng.ui.MainFrame;
-import com.cheng.ui.MainFrame1;
 import com.cheng.ui.MainFrame2;
 
-import javax.swing.*;
 import java.awt.*;   //导入必要的包
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.concurrent.TimeUnit;
@@ -43,26 +37,6 @@ public class StartLogin{
         // 毫秒执行一次。
         globalTimer.scheduleAtFixedRate(onlineTestTask, 0, 5000, TimeUnit.MILLISECONDS);
 
-//        boolean isTerminated = false;
-//        while (!isTerminated) {
-//            try {
-//                isTerminated = globalTimer.isTerminated();
-//                System.out.println(isTerminated);
-//                mainFrame.lstatusSignal.setText("<--");
-//                mainFrame.rstatusSignal.setText("-->");
-//                Thread.sleep(1000);
-//                mainFrame.lstatusSignal.setText("");
-//                mainFrame.rstatusSignal.setText("");
-//                Thread.sleep(1000);
-//
-//            } catch (InterruptedException e) {
-//            }
-//        }
-//
-//         程序走到这里说明跳出循环了，也就是定时器不工作啦
-//        mainFrame.lstatusSignal.setText("-->");
-//        mainFrame.rstatusSignal.setText("<--");
-//        mainFrame.statusLabel.setText("自动检测挂啦");
     }
 }
 

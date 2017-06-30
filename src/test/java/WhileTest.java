@@ -1,3 +1,7 @@
+import org.junit.Test;
+
+import java.util.Date;
+
 /**
  * Created by login on 2017/6/7.
  */
@@ -14,5 +18,16 @@ public class WhileTest {
             break;
 
         }
+    }
+
+
+    @Test
+    public void test() {
+        Date date = new Date();
+        date.getTime();
+        System.out.println(date);
+        System.out.println(date.getHours());
+        System.out.println(date.getMinutes());
+        System.out.println(date.getSeconds());
     }
 }

@@ -22,8 +22,12 @@ import java.util.TimerTask;
  * 用户登录主界面
  */
 public class MainFrame2 extends MainFrame {
-    JLabel date = new JLabel("",JLabel.CENTER);
-    JLabel time = new JLabel("",JLabel.CENTER);
+
+
+   static JLabel dateLabel = new JLabel("",JLabel.CENTER);
+   static JLabel timeLabel = new JLabel("",JLabel.CENTER);
+
+    SimpleDateFormat df = new SimpleDateFormat("MM月dd日(EE)");//设置日期格式
 
 
 
@@ -33,8 +37,8 @@ public class MainFrame2 extends MainFrame {
         jPasswordField = new JPasswordField(10);
         statusLabel = new JLabel("",JLabel.CENTER);
 
-        date.setFont(new Font("SAN_SERIF", Font.CENTER_BASELINE, 18));
-        time.setFont(new Font("SAN_SERIF", Font.BOLD, 25));
+        dateLabel.setFont(new Font("SAN_SERIF", Font.CENTER_BASELINE, 18));
+        timeLabel.setFont(new Font("SAN_SERIF", Font.BOLD, 25));
 
         jb1 = new JButton("有线登录");
         jb2 = new JButton("无线登录");
@@ -45,8 +49,8 @@ public class MainFrame2 extends MainFrame {
         jp3 = new JPanel();
         status = new JPanel();
 
-        date.setPreferredSize(new Dimension(150, 80));
-        time.setPreferredSize(new Dimension(150, 50));
+        dateLabel.setPreferredSize(new Dimension(150, 80));
+        timeLabel.setPreferredSize(new Dimension(150, 50));
         statusLabel.setPreferredSize(new Dimension(150,0));
 
         //设置布局
@@ -61,15 +65,13 @@ public class MainFrame2 extends MainFrame {
         this.setLocation(xLocation, yLocation);//设置窗口居中显示
 
 
-        date.setText("riqi");
-        time.setText("time");
         jp3.add(jb1);
         jp3.add(jb2); //第三块面板添加确认和取消
 
         status.add(statusLabel);
 
-        this.add(date);
-        this.add(time);
+        this.add(dateLabel);
+        this.add(timeLabel);
         this.add(statusLabel);
         this.add(jp3);  //将三块面板添加到登陆框上面
         //设置显示
@@ -162,20 +164,20 @@ public class MainFrame2 extends MainFrame {
         class updateTime extends TimerTask {
             private int hour, min, sec;
             public void run() {
-                SimpleDateFormat df = new SimpleDateFormat("MM月dd日(EE)");//设置日期格式
-                date.setText(df.format(new Date()));
-                GregorianCalendar date = new GregorianCalendar();
-                hour = date.getTime().getHours();
-                min = date.getTime().getMinutes();
-                sec = date.getTime().getSeconds();
+//                GregorianCalendar date = new GregorianCalendar();
+                Date date = new Date();
+                dateLabel.setText(df.format(date));
+                hour = date.getHours();
+                min = date.getMinutes();
+                sec = date.getSeconds();
                 // 画数字钟
-                time.setText(String.format("%1$,02d", hour) + ":"
+                timeLabel.setText(String.format("%1$,02d", hour) + ":"
                         + String.format("%1$,02d", min) + ":"
                         + String.format("%1$,02d", sec));
+
+                date = null;
             }
-
         }
-
         java.util.concurrent.ScheduledExecutorService globalTimer = com.cheng.helper.Timer.getGlobalTimer();
 
         globalTimer.scheduleAtFixedRate(new updateTime(), 0, 1000, TimeUnit.MILLISECONDS);
