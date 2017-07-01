@@ -12,10 +12,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.GregorianCalendar;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
-import java.util.TimerTask;
 
 /**
  * Created by cheng on 2017/6/8.
@@ -30,6 +28,7 @@ public class MainFrame2 extends MainFrame {
 
 
     SimpleDateFormat df = new SimpleDateFormat("MM月dd日(EE)");//设置日期格式
+    java.util.List<String> weathers;
 
 
     public MainFrame2() {
@@ -183,21 +182,33 @@ public class MainFrame2 extends MainFrame {
             }
         }
 
+
+
         // 更新天气的定时任务
         class updateWeather extends TimerTask{
             public void run() {
-                String weather = Weather.getweather();
-                if (weather == null) {
+                weathers = Weather.getweather();
+                if (weathers == null || weathers.size() < 2)
                     weatherLabel.setText("天气服务异常");
-                }else {
-                    weatherLabel.setText(weather);
-                }
+                System.out.println(weathers.toString());
+            }
+        }
+
+        // 将天气查询的结果做一个缓存，避免一直查询
+        class updateWeatherUI extends  TimerTask{
+            int count = 0;
+            public void run() {
+                weatherLabel.setText(weathers.get(count % 2));
+                count = count % 2 + 1;
+                weatherLabel.updateUI();
+                System.out.println(count);
             }
         }
 
         java.util.concurrent.ScheduledExecutorService globalTimer = com.cheng.helper.Timer.getGlobalTimer();
 
         globalTimer.scheduleAtFixedRate(new updateTime(), 0, 1000, TimeUnit.MILLISECONDS);
-        globalTimer.scheduleAtFixedRate(new updateWeather(), 0, 10, TimeUnit.SECONDS);
+        globalTimer.scheduleAtFixedRate(new updateWeather(), 0, 3, TimeUnit.MINUTES);
+        globalTimer.scheduleAtFixedRate(new updateWeatherUI(), 0, 10, TimeUnit.SECONDS);
     }
 }

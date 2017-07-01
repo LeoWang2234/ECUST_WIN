@@ -8,6 +8,8 @@ import org.w3c.dom.NodeList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Weather {
     //    static String[] city = {"北京", "天津", "上海", "重庆", "石家庄", "太原", "沈阳", "长春", "哈尔滨", "南京", "杭州", "合肥", "福州", "南昌", "济南", "郑州", "武汉", "长沙", "广州", "海口", "成都", "贵阳", "昆明", "西安", "兰州", "西宁", "拉萨", "南宁", "呼和浩特", "银川", "乌鲁木齐", "香港", "台北", "澳门"};  //各个城市
@@ -25,8 +27,10 @@ public class Weather {
         }
     }
 
-    public static String getweather()   //获取天气函数
+    public static List<String> getweather()   //获取天气函数
     {
+
+        List<String> weathers = new ArrayList<String>();
         try {
             DocumentBuilderFactory domfac = DocumentBuilderFactory.newInstance();  //相关这个类的使用，可以去网上搜索，下同，不做详细介绍
             DocumentBuilder dombuilder = domfac.newDocumentBuilder();
@@ -34,22 +38,22 @@ public class Weather {
             Element root;
             NodeList books;
             String result = "";
-            String cityName = city[count%2];
-            count = count%2 +  1;
-            System.out.println(count);
-            ur = new URL("http://php.weather.sina.com.cn/xml.php?city=" + cityName + "&password=DJOYnieT8234jlsK&day=" + 0);
-            doc = dombuilder.parse(ur.openStream());
-            root = doc.getDocumentElement();
-            books = root.getChildNodes();
-            for (Node node = books.item(1).getFirstChild(); node != null; node = node.getNextSibling()) {
-                if (node.getNodeType() == Node.ELEMENT_NODE) {
-                    if (node.getNodeName().equals("status1")) weather = node.getTextContent();  //获取到天气情况
-                    else if (node.getNodeName().equals("temperature1")) high = node.getTextContent();  //获取到最高温度
-                    else if (node.getNodeName().equals("temperature2")) low = node.getTextContent();   //获取到最低温度
+            for (String cityName : city) {
+                ur = new URL("http://php.weather.sina.com.cn/xml.php?city=" + cityName + "&password=DJOYnieT8234jlsK&day=" + 0);
+                doc = dombuilder.parse(ur.openStream());
+                root = doc.getDocumentElement();
+                books = root.getChildNodes();
+                for (Node node = books.item(1).getFirstChild(); node != null; node = node.getNextSibling()) {
+                    if (node.getNodeType() == Node.ELEMENT_NODE) {
+                        if (node.getNodeName().equals("status1")) weather = node.getTextContent();  //获取到天气情况
+                        else if (node.getNodeName().equals("temperature1")) high = node.getTextContent();  //获取到最高温度
+                        else if (node.getNodeName().equals("temperature2")) low = node.getTextContent();   //获取到最低温度
+                    }
                 }
+                result = cityName + " " + weather + " " + low + "℃~" + high + "℃";
+                weathers.add(result);
             }
-            result = cityName + " " + weather + " " + low + "℃~" + high + "℃";
-            return result;
+            return weathers;
 
         } catch (Exception e) {
             System.out.println("获取天气失败:" + e);
