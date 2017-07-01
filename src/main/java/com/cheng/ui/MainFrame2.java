@@ -4,6 +4,7 @@ import com.cheng.helper.ProperityHelper;
 import com.cheng.helper.Utils;
 import com.cheng.login.LoginManager;
 import com.cheng.login.LoginStatus;
+import com.cheng.login.Weather;
 import sun.applet.Main;
 
 import javax.swing.*;
@@ -27,6 +28,7 @@ public class MainFrame2 extends MainFrame {
     static JLabel dateLabel = new JLabel("", JLabel.CENTER);
     static JLabel timeLabel = new JLabel("", JLabel.CENTER);
 
+
     SimpleDateFormat df = new SimpleDateFormat("MM月dd日(EE)");//设置日期格式
 
 
@@ -35,9 +37,11 @@ public class MainFrame2 extends MainFrame {
         jTextField = new JTextField(10);
         jPasswordField = new JPasswordField(10);
         statusLabel = new JLabel("", JLabel.CENTER);
+        weatherLabel = new JLabel("",JLabel.CENTER);
 
         dateLabel.setFont(new Font("SAN_SERIF", Font.CENTER_BASELINE, 18));
         timeLabel.setFont(new Font("SAN_SERIF", Font.BOLD, 25));
+        weatherLabel.setFont(new Font("",Font.BOLD, 15));
 
         jb1 = new JButton("有线登录");
         jb2 = new JButton("无线登录");
@@ -160,6 +164,7 @@ public class MainFrame2 extends MainFrame {
         });
 
 
+        // 更新时间显示的定时任务
         class updateTime extends TimerTask {
             private int hour, min, sec;
 
@@ -177,8 +182,22 @@ public class MainFrame2 extends MainFrame {
                 System.gc();
             }
         }
+
+        // 更新天气的定时任务
+        class updateWeather extends TimerTask{
+            public void run() {
+                String weather = Weather.getweather();
+                if (weather == null) {
+                    weatherLabel.setText("天气服务异常");
+                }else {
+                    weatherLabel.setText(weather);
+                }
+            }
+        }
+
         java.util.concurrent.ScheduledExecutorService globalTimer = com.cheng.helper.Timer.getGlobalTimer();
 
         globalTimer.scheduleAtFixedRate(new updateTime(), 0, 1000, TimeUnit.MILLISECONDS);
+        globalTimer.scheduleAtFixedRate(new updateWeather(), 0, 10, TimeUnit.SECONDS);
     }
 }

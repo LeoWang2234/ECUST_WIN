@@ -12,6 +12,7 @@ public abstract class MainFrame extends JFrame{
     public JPanel jp1, jp2, jp3, status, clock;
     public JButton jb1, jb2;//创建按钮
     public volatile boolean ignorePop = false; //  掉线后忽略弹窗
+    public JLabel weatherLabel;
 
     public int xLocation;
     public int yLocation;

@@ -4,13 +4,19 @@
 public class ExceptionTest {
     public static void main(String[] args) {
 
+        String string = test();
+        System.out.println(string);
 
-        boolean flag = true;
-        while (flag) {
-            System.out.println("inside ");
-            flag = false;
+    }
+
+    public static String test() {
+        try {
+            throw new Exception();
+        } catch (Exception e) {
+            System.out.println("exception");
+//            e.printStackTrace();
         }
-
+        return "test";
     }
 }
 

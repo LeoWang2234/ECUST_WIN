@@ -31,7 +31,7 @@ public class StartLogin{
             }
         });
 
-        MyTimerTask onlineTestTask = new MyTimerTask(mainFrame);
+        OnlineTestTask onlineTestTask = new OnlineTestTask(mainFrame);
 
         // delay为long,period为long：从现在起过delay毫秒以后，每隔period
         // 毫秒执行一次。

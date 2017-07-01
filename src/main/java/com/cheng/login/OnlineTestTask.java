@@ -14,19 +14,17 @@ import java.util.TimerTask;
  *
  * 定时检测是否掉线
  */
-class MyTimerTask extends TimerTask {
+class OnlineTestTask extends TimerTask {
 
     MainFrame mainFrame;
-    JLabel label = new JLabel("Nothing is Impossible",JLabel.CENTER);
 
-    public MyTimerTask(final MainFrame mainFrame) {
+    public OnlineTestTask(final MainFrame mainFrame) {
         this.mainFrame = mainFrame;
-        label.setFont(new Font("",Font.BOLD, 15));
-        label.addMouseListener(new MouseAdapter() {
+        mainFrame.weatherLabel.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
-                mainFrame.remove(label);
+                mainFrame.remove(mainFrame.weatherLabel);
                 mainFrame.add(mainFrame.jp3);
                 mainFrame.jp3.updateUI();
             }
@@ -43,9 +41,10 @@ class MyTimerTask extends TimerTask {
             new Thread(new Runnable() {
                 public void run() {
                     mainFrame.remove(mainFrame.jp3);
-                    mainFrame.add(label);
-                    label.updateUI();
+                    mainFrame.add(mainFrame.weatherLabel);
+                    mainFrame.weatherLabel.updateUI();
                     mainFrame.statusLabel.setText("当前在线");
+                    mainFrame.statusLabel.setFont(new Font("",Font.BOLD,15));
                     mainFrame.statusLabel.setForeground(Color.BLUE);
                     mainFrame.jb2.setText("无线登录");
                     mainFrame.jb2.setForeground(Color.black);
@@ -70,7 +69,7 @@ class MyTimerTask extends TimerTask {
 
             new Thread(new Runnable() {
                 public void run() {
-                    mainFrame.remove(label);
+                    mainFrame.remove(mainFrame.weatherLabel);
                     mainFrame.add(mainFrame.jp3);
                     mainFrame.jp3.updateUI();
                     if (!mainFrame.ignorePop) {
