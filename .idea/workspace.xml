@@ -7,29 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6039730b-a0e0-4043-8cc0-c54cf13197c9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cheng/common/Common.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ECUST_WIN_jar/ECUST_WIN.jar" afterPath="$PROJECT_DIR$/out/artifacts/ECUST_WIN_jar/ECUST_WIN.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/OnlineTestTask$1.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/login/OnlineTestTask$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/OnlineTestTask$2.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/login/OnlineTestTask$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/OnlineTestTask$3.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/login/OnlineTestTask$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/OnlineTestTask.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/login/OnlineTestTask.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$1.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/login/StartLogin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2$1$1.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2$1$2.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2$1$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2$1.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2$1updateTime.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2$1updateTime.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2$1updateWeather.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2$1updateWeather.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2$1updateWeatherUI.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2$1updateWeatherUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2$2$1.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2$2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2$2$2.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2$2$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2$2$3.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2$2$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2$2.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2.class" afterPath="$PROJECT_DIR$/target/classes/com/cheng/ui/MainFrame2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cheng/login/OnlineTestTask.java" afterPath="$PROJECT_DIR$/src/main/java/com/cheng/login/OnlineTestTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cheng/login/StartLogin.java" afterPath="$PROJECT_DIR$/src/main/java/com/cheng/login/StartLogin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cheng/login/Weather.java" afterPath="$PROJECT_DIR$/src/main/java/com/cheng/login/Weather.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cheng/ui/MainFrame2.java" afterPath="$PROJECT_DIR$/src/main/java/com/cheng/ui/MainFrame2.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -90,7 +67,7 @@
       <file leaf-file-name="OnlineStatus.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/OnlineStatus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="319">
               <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
@@ -100,16 +77,16 @@
       <file leaf-file-name="MainFrame2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/ui/MainFrame2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="749">
-              <caret line="211" column="39" lean-forward="true" selection-start-line="211" selection-start-column="39" selection-end-line="211" selection-end-column="39" />
+            <state relative-caret-position="404">
+              <caret line="200" column="56" lean-forward="false" selection-start-line="200" selection-start-column="56" selection-end-line="200" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5593#6390#0" expanded="true" />
-                <element signature="e#6389#6390#0" expanded="true" />
-                <element signature="e#6557#6860#0" expanded="true" />
-                <element signature="e#6859#6860#0" expanded="true" />
-                <element signature="e#7067#7576#0" expanded="true" />
-                <element signature="e#7575#7576#0" expanded="true" />
+                <element signature="e#5593#6342#0" expanded="true" />
+                <element signature="e#6341#6342#0" expanded="true" />
+                <element signature="e#6509#6929#0" expanded="true" />
+                <element signature="e#6928#6929#0" expanded="true" />
+                <element signature="e#7136#7882#0" expanded="true" />
+                <element signature="e#7881#7882#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1340,7 +1317,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121404000" />
+    <option name="totallyTimeSpent" value="122567000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1373,7 +1350,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6160584" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6160584" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920793" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50364965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28547856" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1805,14 +1782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/OnlineStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/OnlineTestTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -1858,18 +1827,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/login/OnlineStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cheng/ui/MainFrame2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="211" column="39" lean-forward="true" selection-start-line="211" selection-start-column="39" selection-end-line="211" selection-end-column="39" />
+        <state relative-caret-position="404">
+          <caret line="200" column="56" lean-forward="false" selection-start-line="200" selection-start-column="56" selection-end-line="200" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5593#6390#0" expanded="true" />
-            <element signature="e#6389#6390#0" expanded="true" />
-            <element signature="e#6557#6860#0" expanded="true" />
-            <element signature="e#6859#6860#0" expanded="true" />
-            <element signature="e#7067#7576#0" expanded="true" />
-            <element signature="e#7575#7576#0" expanded="true" />
+            <element signature="e#5593#6342#0" expanded="true" />
+            <element signature="e#6341#6342#0" expanded="true" />
+            <element signature="e#6509#6929#0" expanded="true" />
+            <element signature="e#6928#6929#0" expanded="true" />
+            <element signature="e#7136#7882#0" expanded="true" />
+            <element signature="e#7881#7882#0" expanded="true" />
           </folding>
         </state>
       </provider>

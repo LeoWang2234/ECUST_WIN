@@ -193,9 +193,12 @@ public class MainFrame2 extends MainFrame {
             public void run() {
                 new Thread(new Runnable() {
                     public void run() {
-                        Common.weathers = Weather.getweather();
+                        // 只在在线时请求天气数据，
+                        if (Common.online) {
+                            Common.weathers = Weather.getweather();
+                        }
                         if (Common.weathers.size() < 2){
-                            weatherLabel.setText("天气服务异常");
+                            weatherLabel.setText("正在启动实时天气");
                         }
                     }
                 }).start();
@@ -209,14 +212,16 @@ public class MainFrame2 extends MainFrame {
             public void run() {
                 new Thread(new Runnable() {
                     public void run() {
-                        if (Common.online && Common.weathers.size()==0){
-                            Common.weathers = Weather.getweather();
-                        }else if (Common.weathers.size()!=0){
-                            System.out.println(Common.weathers.toString());
-                            weatherLabel.setText(Common.weathers.get(count % 2));
-                            count = count % 2 + 1;
-                            weatherLabel.updateUI();
-                            System.out.println("weather UI update");
+                        if (Common.online) {
+                            if (Common.weathers.size()==0){
+                                Common.weathers = Weather.getweather();
+                            }else if (Common.weathers.size()!=0){
+                                System.out.println(Common.weathers.toString());
+                                weatherLabel.setText(Common.weathers.get(count % 2));
+                                count = count % 2 + 1;
+                                weatherLabel.updateUI();
+                                System.out.println("weather UI update");
+                            }
                         }
                     }
                 }).start();
