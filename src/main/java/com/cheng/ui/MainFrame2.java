@@ -40,6 +40,7 @@ public class MainFrame2 extends MainFrame {
         dateLabel.setFont(new Font("SAN_SERIF", Font.CENTER_BASELINE, 18));
         timeLabel.setFont(new Font("SAN_SERIF", Font.BOLD, 25));
         weatherLabel.setFont(new Font("", Font.BOLD, 15));
+        weatherLabel.setText("正在启动实时天气");
 
         jb1 = new JButton("有线登录");
         jb2 = new JButton("无线登录");
@@ -187,32 +188,21 @@ public class MainFrame2 extends MainFrame {
             }
         }
 
-
-        // 更新天气的定时任务
-        class updateWeather implements Runnable {
-            public void run() {
-                new Thread(new Runnable() {
-                    public void run() {
-                        // 只在在线时请求天气数据，
-                        if (Common.online) {
-                            Common.weathers = Weather.getweather();
-                        }
-                        if (Common.weathers.size() < 2){
-                            weatherLabel.setText("正在启动实时天气");
-                        }
-                    }
-                }).start();
-
-            }
-        }
-
         // 将天气查询的结果做一个缓存，避免一直查询
         class updateWeatherUI implements Runnable {
             int count = 0;
+            int time = 0;
             public void run() {
                 new Thread(new Runnable() {
                     public void run() {
                         if (Common.online) {
+                            // 每隔 30 * 10 秒后更新一下天气，也就是五分钟
+                            time++;
+                            if (time == 30) {
+                                Common.weathers = Weather.getweather();
+                                time = 0;
+                                System.out.println("--------request for weather-------");
+                            }
                             if (Common.weathers.size()==0){
                                 Common.weathers = Weather.getweather();
                             }else if (Common.weathers.size()!=0){
@@ -229,7 +219,6 @@ public class MainFrame2 extends MainFrame {
         }
 
         Common.globalTimer.scheduleWithFixedDelay(new updateTime(), 0, 1000, TimeUnit.MILLISECONDS);
-        Common.globalTimer.scheduleWithFixedDelay(new updateWeather(), 0, 300, TimeUnit.SECONDS);
         Common.globalTimer.scheduleWithFixedDelay(new updateWeatherUI(), 0, 10, TimeUnit.SECONDS);
     }
 }
