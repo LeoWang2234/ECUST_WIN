@@ -1,6 +1,8 @@
 package com.cheng.ui;
 
+import com.cheng.common.Common;
 import com.cheng.helper.ProperityHelper;
+import com.cheng.helper.Timer;
 import com.cheng.helper.Utils;
 import com.cheng.login.LoginManager;
 import com.cheng.login.LoginStatus;
@@ -28,19 +30,16 @@ public class MainFrame2 extends MainFrame {
 
 
     SimpleDateFormat df = new SimpleDateFormat("MM月dd日(EE)");//设置日期格式
-    java.util.List<String> weathers;
-
-
     public MainFrame2() {
 
         jTextField = new JTextField(10);
         jPasswordField = new JPasswordField(10);
         statusLabel = new JLabel("", JLabel.CENTER);
-        weatherLabel = new JLabel("",JLabel.CENTER);
+        weatherLabel = new JLabel("", JLabel.CENTER);
 
         dateLabel.setFont(new Font("SAN_SERIF", Font.CENTER_BASELINE, 18));
         timeLabel.setFont(new Font("SAN_SERIF", Font.BOLD, 25));
-        weatherLabel.setFont(new Font("",Font.BOLD, 15));
+        weatherLabel.setFont(new Font("", Font.BOLD, 15));
 
         jb1 = new JButton("有线登录");
         jb2 = new JButton("无线登录");
@@ -164,51 +163,68 @@ public class MainFrame2 extends MainFrame {
 
 
         // 更新时间显示的定时任务
-        class updateTime extends TimerTask {
+        class updateTime implements Runnable {
             private int hour, min, sec;
 
             public void run() {
-//                GregorianCalendar date = new GregorianCalendar();
-                Date date = new Date();
-                dateLabel.setText(df.format(date));
-                hour = date.getHours();
-                min = date.getMinutes();
-                sec = date.getSeconds();
-                // 画数字钟
-                timeLabel.setText(String.format("%1$,02d", hour) + ":"
-                        + String.format("%1$,02d", min) + ":"
-                        + String.format("%1$,02d", sec));
-                System.gc();
+
+                new Thread(new Runnable() {
+                    public void run() {
+                        //                GregorianCalendar date = new GregorianCalendar();
+                        Date date = new Date();
+                        dateLabel.setText(df.format(date));
+                        hour = date.getHours();
+                        min = date.getMinutes();
+                        sec = date.getSeconds();
+                        // 画数字钟
+                        timeLabel.setText(String.format("%1$,02d", hour) + ":"
+                                + String.format("%1$,02d", min) + ":"
+                                + String.format("%1$,02d", sec));
+
+                        System.out.println("time update");
+                    }
+                }).start();
             }
         }
 
 
-
         // 更新天气的定时任务
-        class updateWeather extends TimerTask{
+        class updateWeather implements Runnable {
             public void run() {
-                weathers = Weather.getweather();
-                if (weathers == null || weathers.size() < 2)
-                    weatherLabel.setText("天气服务异常");
-                System.out.println(weathers.toString());
+                new Thread(new Runnable() {
+                    public void run() {
+                        Common.weathers = Weather.getweather();
+                        if (Common.weathers.size() < 2){
+                            weatherLabel.setText("天气服务异常");
+                        }
+                    }
+                }).start();
+
             }
         }
 
         // 将天气查询的结果做一个缓存，避免一直查询
-        class updateWeatherUI extends  TimerTask{
+        class updateWeatherUI implements Runnable {
             int count = 0;
             public void run() {
-                weatherLabel.setText(weathers.get(count % 2));
-                count = count % 2 + 1;
-                weatherLabel.updateUI();
-                System.out.println(count);
+                new Thread(new Runnable() {
+                    public void run() {
+                        if (Common.online && Common.weathers.size()==0){
+                            Common.weathers = Weather.getweather();
+                        }else if (Common.weathers.size()!=0){
+                            System.out.println(Common.weathers.toString());
+                            weatherLabel.setText(Common.weathers.get(count % 2));
+                            count = count % 2 + 1;
+                            weatherLabel.updateUI();
+                            System.out.println("weather UI update");
+                        }
+                    }
+                }).start();
             }
         }
 
-        java.util.concurrent.ScheduledExecutorService globalTimer = com.cheng.helper.Timer.getGlobalTimer();
-
-        globalTimer.scheduleAtFixedRate(new updateTime(), 0, 1000, TimeUnit.MILLISECONDS);
-        globalTimer.scheduleAtFixedRate(new updateWeather(), 0, 3, TimeUnit.MINUTES);
-        globalTimer.scheduleAtFixedRate(new updateWeatherUI(), 0, 10, TimeUnit.SECONDS);
+        Common.globalTimer.scheduleWithFixedDelay(new updateTime(), 0, 1000, TimeUnit.MILLISECONDS);
+        Common.globalTimer.scheduleWithFixedDelay(new updateWeather(), 0, 300, TimeUnit.SECONDS);
+        Common.globalTimer.scheduleWithFixedDelay(new updateWeatherUI(), 0, 10, TimeUnit.SECONDS);
     }
 }

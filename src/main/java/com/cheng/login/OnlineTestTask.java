@@ -1,5 +1,6 @@
 package com.cheng.login;
 
+import com.cheng.common.Common;
 import com.cheng.ui.MainFrame;
 import sun.jvm.hotspot.ui.table.LongCellRenderer;
 
@@ -14,7 +15,7 @@ import java.util.TimerTask;
  *
  * 定时检测是否掉线
  */
-class OnlineTestTask extends TimerTask {
+class OnlineTestTask implements Runnable {
 
     MainFrame mainFrame;
 
@@ -34,7 +35,9 @@ class OnlineTestTask extends TimerTask {
     public void run() {
 
         Boolean status = OnlineStatus.sendGet();
+        System.out.println("online status update");
         if (status) {
+            Common.online = status;
             mainFrame.ignorePop = false;
             mainFrame.setAlwaysOnTop(false);
 
@@ -66,7 +69,8 @@ class OnlineTestTask extends TimerTask {
                 return;
 
             }
-
+            // 更新全局在线状态
+            Common.online = status;
             new Thread(new Runnable() {
                 public void run() {
                     mainFrame.remove(mainFrame.weatherLabel);

@@ -58,7 +58,7 @@ public class Weather {
         } catch (Exception e) {
             System.out.println("获取天气失败:" + e);
         }
-        return null;
+        return weathers;
     }
 
     public static void main(String[] arg) {
