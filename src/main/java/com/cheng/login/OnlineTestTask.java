@@ -47,8 +47,8 @@ class OnlineTestTask implements Runnable {
                     mainFrame.add(mainFrame.weatherLabel);
                     mainFrame.weatherLabel.updateUI();
                     mainFrame.statusLabel.setText("当前在线");
+                    mainFrame.statusLabel.setForeground(new Color(0x228B22));
                     mainFrame.statusLabel.setFont(new Font("",Font.BOLD,15));
-                    mainFrame.statusLabel.setForeground(Color.BLUE);
                     mainFrame.jb2.setText("无线登录");
                     mainFrame.jb2.setForeground(Color.black);
                     mainFrame.jb1.setText("有线登录");

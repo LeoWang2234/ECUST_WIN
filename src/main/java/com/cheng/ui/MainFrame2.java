@@ -1,13 +1,8 @@
 package com.cheng.ui;
 
 import com.cheng.common.Common;
-import com.cheng.helper.ProperityHelper;
-import com.cheng.helper.Timer;
-import com.cheng.helper.Utils;
 import com.cheng.login.LoginManager;
 import com.cheng.login.LoginStatus;
-import com.cheng.login.Weather;
-import sun.applet.Main;
 
 import javax.swing.*;
 import java.awt.*;
@@ -37,13 +32,22 @@ public class MainFrame2 extends MainFrame {
         statusLabel = new JLabel("", JLabel.CENTER);
         weatherLabel = new JLabel("", JLabel.CENTER);
 
+
         dateLabel.setFont(new Font("SAN_SERIF", Font.CENTER_BASELINE, 18));
         timeLabel.setFont(new Font("SAN_SERIF", Font.BOLD, 25));
-        weatherLabel.setFont(new Font("", Font.BOLD, 15));
+        weatherLabel.setFont(new Font("SAN_SERIF", Font.BOLD, 15));
         weatherLabel.setText("正在启动实时天气");
+
+//        dateLabel.setForeground(Color.MAGENTA);
+//        timeLabel.setForeground(Color.ORANGE);
+//        weatherLabel.setForeground(Color.GREEN);
 
         jb1 = new JButton("有线登录");
         jb2 = new JButton("无线登录");
+
+        jb2.setPreferredSize(new java.awt.Dimension(65, 33));
+        jb1.setPreferredSize(new java.awt.Dimension(65, 33));
+
 
         Font font1 = new Font("", Font.BOLD, 12);
         jb1.setFont(font1);
@@ -199,12 +203,12 @@ public class MainFrame2 extends MainFrame {
                             // 每隔 30 * 10 秒后更新一下天气，也就是五分钟
                             time++;
                             if (time == 30) {
-                                Common.weathers = Weather.getweather();
+                                Common.updateWeathers();
                                 time = 0;
                                 System.out.println("--------request for weather-------");
                             }
                             if (Common.weathers.size()==0){
-                                Common.weathers = Weather.getweather();
+                                Common.updateWeathers();
                             }else if (Common.weathers.size()!=0){
                                 System.out.println(Common.weathers.toString());
                                 weatherLabel.setText(Common.weathers.get(count % 2));
