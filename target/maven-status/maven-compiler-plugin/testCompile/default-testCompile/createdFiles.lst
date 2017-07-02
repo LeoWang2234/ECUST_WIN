@@ -1,4 +1,10 @@
+DateCompare.class
 SwingTest.class
+ExceptionTest.class
+WhileTest.class
 JsoupHelperTest.class
+FileHelperTest.class
+Weather.class
 WireLessLoginTest.class
+OnlineTestTest.class
 WireLoginTest.class

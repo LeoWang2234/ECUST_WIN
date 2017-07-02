@@ -1,5 +1,7 @@
 package com.cheng.ui;
 
+import com.cheng.audio.Audio;
+import com.cheng.audio.PlayMusic;
 import com.cheng.common.Common;
 import com.cheng.login.LoginManager;
 import com.cheng.login.LoginStatus;
@@ -8,6 +10,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -24,10 +28,15 @@ public class MainFrame2 extends MainFrame {
     static JLabel timeLabel = new JLabel("", JLabel.CENTER);
 
 
+
     SimpleDateFormat df = new SimpleDateFormat("MM月dd日(EE)");//设置日期格式
     public MainFrame2() {
 
         jTextField = new JTextField(10);
+        jTextField.setFont(new Font("宋体",Font.BOLD,40));
+        word = new JTextField();
+//        word.setPreferredSize(new Dimension(10,20));
+        word.setSize(new Dimension(50, 10));
         jPasswordField = new JPasswordField(10);
         statusLabel = new JLabel("", JLabel.CENTER);
         weatherLabel = new JLabel("", JLabel.CENTER);
@@ -90,6 +99,22 @@ public class MainFrame2 extends MainFrame {
         this.setResizable(false);
         this.pack();
 
+
+        // 单词查询事件监听
+        word.addKeyListener(new KeyListener() {
+            public void keyPressed(KeyEvent e) {
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    String value = word.getText();
+                     System.out.println("Enter " + value);
+                    String filePath = Audio.getAudio(value);
+                    PlayMusic.Play(filePath);
+                }
+            }
+            public void keyReleased(KeyEvent e) {
+            }
+            public void keyTyped(KeyEvent e) {
+            }
+        });
 
 // 有线登录事件监听
         jb1.addActionListener(new ActionListener() {

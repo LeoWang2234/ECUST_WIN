@@ -2,7 +2,6 @@ package com.cheng.login;
 
 import com.cheng.common.Common;
 import com.cheng.ui.MainFrame;
-import sun.jvm.hotspot.ui.table.LongCellRenderer;
 
 import javax.swing.*;
 import java.awt.*;
@@ -45,14 +44,13 @@ class OnlineTestTask implements Runnable {
                 public void run() {
                     mainFrame.remove(mainFrame.jp3);
                     mainFrame.add(mainFrame.weatherLabel);
+                    mainFrame.remove(mainFrame.statusLabel);
+                    if (!Common.isWordOnFrame) {
+                        mainFrame.add(mainFrame.word, 2);
+                        mainFrame.word.updateUI();
+                        Common.isWordOnFrame = true;
+                    }
                     mainFrame.weatherLabel.updateUI();
-                    mainFrame.statusLabel.setText("当前在线");
-                    mainFrame.statusLabel.setForeground(new Color(0x228B22));
-                    mainFrame.statusLabel.setFont(new Font("",Font.BOLD,15));
-                    mainFrame.jb2.setText("无线登录");
-                    mainFrame.jb2.setForeground(Color.black);
-                    mainFrame.jb1.setText("有线登录");
-                    mainFrame.jb1.setForeground(Color.black);
                 }
             }).start();
 
@@ -75,7 +73,13 @@ class OnlineTestTask implements Runnable {
                 public void run() {
                     mainFrame.remove(mainFrame.weatherLabel);
                     mainFrame.add(mainFrame.jp3);
+                    if (Common.isWordOnFrame) {
+                        mainFrame.remove(mainFrame.word);
+                        Common.isWordOnFrame = false;
+                    }
+                    mainFrame.add(mainFrame.statusLabel, 2);
                     mainFrame.jp3.updateUI();
+                    mainFrame.statusLabel.updateUI();
                     if (!mainFrame.ignorePop) {
                         mainFrame.statusLabel.setText("掉线啦 点我忽略");
                         mainFrame.statusLabel.setForeground(Color.RED);

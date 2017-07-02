@@ -17,7 +17,7 @@ public class Common {
     public static boolean online = false;
     public static List<String> weathers = new ArrayList<String>();
     public static ScheduledExecutorService globalTimer = Timer.getGlobalTimer();
-
+    public static volatile boolean isWordOnFrame = false;
 
     // 现在有两个天气接口，要是需要更换接口，直接在这里改就行了了
     public static List<String> getWeathers() {
