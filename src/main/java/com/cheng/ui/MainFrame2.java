@@ -8,10 +8,7 @@ import com.cheng.login.LoginStatus;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
+import java.awt.event.*;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -26,18 +23,39 @@ public class MainFrame2 extends MainFrame {
 
     static JLabel dateLabel = new JLabel("", JLabel.CENTER);
     static JLabel timeLabel = new JLabel("", JLabel.CENTER);
-
-
+    static String initStr = new String(" Just do it !");
+    static JTextField wordText = new JTextField(initStr,6);
 
     SimpleDateFormat df = new SimpleDateFormat("MM月dd日(EE)");//设置日期格式
     public MainFrame2() {
 
-        jTextField = new JTextField(10);
-        jTextField.setFont(new Font("宋体",Font.BOLD,40));
-        word = new JTextField();
-//        word.setPreferredSize(new Dimension(10,20));
-        word.setSize(new Dimension(50, 10));
-        jPasswordField = new JPasswordField(10);
+//        jTextField = new JTextField(10);
+//        jTextField.setFont(new Font("宋体",Font.BOLD,40));
+//        jTextField.setHorizontalAlignment(JTextField.CENTER);
+
+        wordText.setFont(wordText.getFont().deriveFont(25f));
+        word = new JPanel(new FlowLayout(FlowLayout.CENTER, 10, 10));
+        word.add(wordText);
+
+        wordText.setForeground(Color.LIGHT_GRAY);
+
+        wordText.addFocusListener(new FocusListener() {
+                                      public void focusGained(FocusEvent e) {
+                                          JTextField src = (JTextField) e.getSource();
+                                          src.setForeground(Color.blue);
+                                          if (src.getText().equals(initStr)) {
+                                              src.setText(null);
+                                          }
+                                      }
+
+                                      public void focusLost(FocusEvent e) {
+                                          JTextField src = (JTextField) e.getSource();
+                                              src.setText(initStr);
+                                              src.setForeground(Color.LIGHT_GRAY);
+                                      }
+                                  });
+
+//        jPasswordField = new JPasswordField(10);
         statusLabel = new JLabel("", JLabel.CENTER);
         weatherLabel = new JLabel("", JLabel.CENTER);
 
@@ -46,10 +64,6 @@ public class MainFrame2 extends MainFrame {
         timeLabel.setFont(new Font("SAN_SERIF", Font.BOLD, 25));
         weatherLabel.setFont(new Font("SAN_SERIF", Font.BOLD, 15));
         weatherLabel.setText("正在启动实时天气");
-
-//        dateLabel.setForeground(Color.MAGENTA);
-//        timeLabel.setForeground(Color.ORANGE);
-//        weatherLabel.setForeground(Color.GREEN);
 
         jb1 = new JButton("有线登录");
         jb2 = new JButton("无线登录");
@@ -91,8 +105,6 @@ public class MainFrame2 extends MainFrame {
         this.add(jp3);  //将三块面板添加到登陆框上面
         //设置显示
         this.setPreferredSize(new Dimension(200, 200));
-//        this.setSize(300, 200);
-        //this.pack();
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
         this.setTitle("登陆");
@@ -100,11 +112,12 @@ public class MainFrame2 extends MainFrame {
         this.pack();
 
 
+
         // 单词查询事件监听
-        word.addKeyListener(new KeyListener() {
+        wordText.addKeyListener(new KeyListener() {
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-                    String value = word.getText();
+                    String value = wordText.getText();
                      System.out.println("Enter " + value);
                     String filePath = Audio.getAudio(value);
                     PlayMusic.Play(filePath);
